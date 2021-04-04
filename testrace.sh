@@ -33,7 +33,10 @@ directory(){
 	cd /home/testrace
 }
 install(){
-	[[ ! -d /home/testrace/besttrace ]] && wget https://raw.githubusercontent.com/nanqinlang-script/testrace/master/besttrace.tar.gz && tar -zxf besttrace.tar.gz && rm besttrace.tar.gz
+	[[ ! -d /home/testrace/besttrace ]] && mkdir -p /home/testrace/besttrace
+	cd /home/testrace/besttrace
+	[[ ! -f /home/testrace/besttrace/besttrace ]] && wget https://cdn.ipip.net/17mon/besttrace4linux.zip && unzip besttrace4linux.zip && rm besttrace4linux.zip
+	cd /home/testrace
 	[[ ! -d /home/testrace/besttrace ]] && echo -e "${Error} download failed, please check!" && exit 1
 	chmod -R +x /home/testrace
 }

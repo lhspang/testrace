@@ -23,3 +23,10 @@ it's the best to say nothing !
 
 ## according
 https://github.com/nanqinlang-script/testrace/wiki
+
+------
+
+由于原脚本使用的bestrace已过期，现更改下载地址为官方源。
+
+使用本脚本需删除 /home/testrace/besttrace 目录。
+
