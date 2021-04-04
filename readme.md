@@ -30,3 +30,8 @@ https://github.com/nanqinlang-script/testrace/wiki
 
 使用本脚本需删除 /home/testrace/besttrace 目录。
 
+```bash
+wget https://raw.githubusercontent.com/lhspang/testrace/master/testrace.sh
+bash testrace.sh
+```
+
